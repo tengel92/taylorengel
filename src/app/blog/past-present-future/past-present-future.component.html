@@ -1,0 +1,44 @@
+<section>  
+  <div class="wrap">
+    <!-- <h3>Portfolio, team, work, showcase...</h3> -->
+    <ul class="flexblock gallery">
+      <li>
+        <a [routerLink]="['./planes']">
+          <figure>
+            <img src="/assets/images/plane.jpg"  alt="Plane">
+            <figcaption>
+              <h2>Past. Present. Future.</h2>
+              <p>This series is about where innovations were in the past, where they are now and where they will be in the future. Topics range from technology, manufacturing and transportation.</p>
+              <p>By: Taylor Engel</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a>
+          <figure [routerLink]="['./cars']">
+            <img src="/assets/images/blog/cars/vw.jpg" alt="VW">
+            <figcaption>
+              <h2>Point A to Point B to Technology Product?</h2>
+              <p>A history of how cars have transformed and how they will continue to transform.</p>
+              <p>By: Taylor Engel</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['./thebucket']">
+          <figure>
+            <img alt="Thumbnail" src="/assets/images/bucket.jpg">
+            <figcaption>
+              <h2>The Bucket</h2>
+              <p>You'll find any other thing on my mind in this miscellaneous section.</p>
+              <p>By: Taylor Engel</p> 
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- .end .wrap -->
+</section>

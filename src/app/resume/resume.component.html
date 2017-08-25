@@ -1,0 +1,159 @@
+
+<section class="slide-top">
+    <div class="wrap">
+    <div class="card-70">
+      <div class="content-left">
+        <h1>Core Competencies</h1>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="card-70">
+      <div class="content-left">
+        <h4>Significant Experience</h4>
+        <ul class="description">
+          <li>HTML5 / CSS3</li>
+          <li>JavaScript / jQuery</li>
+          <li>Angular</li>
+          <li>Node.js</li>
+          <li>RESTful APIs</li>
+          <li>SQL</li>
+          <li>Linux / UNIX commands</li>
+          <li>Bootstrap / Material / Responsive Design</li>
+          <li>Sass / LESS</li>
+          <li>GIT / SVN</li>
+          <li>Agile / Lean / Kanban Process</li>
+        </ul>
+      </div> 
+      <div class="content-left">
+        <h4>Knowledgeable / Learning</h4>
+        <ul class="description">
+          <li>Ionic</li>
+          <li>React</li>
+          <li>Vue.js</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Amazon Web Services</li>
+          <li>WordPress / PHP</li>
+          <li>Ruby on Rails</li>
+        </ul>
+      </div>
+    </div>      
+      <!-- <p>HTML5 / CSS3</p>
+      <p>JavaScript / jQuery</p>
+      <p>Angular</p>
+      <p>Node.js</p>
+      <p>RESTful APIs</p>
+      <p>SQL</p>      
+      <p>Bootstrap / Material / Responsive Design</p>
+      <p>Sass / LESS</p>
+      <p>GIT / SVN</p>
+      <p>Agile Methodology</p> -->
+  </div>
+  <hr>
+  <div class="wrap">
+    <div class="card-70">
+      <div class="content-left">
+        <h1>Work Experience</h1>
+        <h4>Nucor Corporation - Dallas, TX</h4>
+        <ul class="flexblock specs">
+          <li (click)="showWorkDetails1()">
+            <a title="Oracle SOA Developer">
+              <div>
+                <h2>Oracle SOA Developer</h2>
+                <p class="year">
+                  October 2015 – present
+                </p>
+              </div>
+            </a>
+          </li>
+          <h4>Nucor-Yamato Steel - Blytheville, AR</h4>
+          <li (click)="showWorkDetails2()">
+            <a title="IT Business Process Analyst">
+              <h2>IT Business Process Analyst</h2>
+              <p class="year">
+                December 2014 – October 2015
+              </p>
+            </a>
+          </li>
+          <li (click)="showWorkDetails3()">
+            <a title="IT Systems Analyst">
+              <h2>IT Systems Analyst</h2>
+              <p class="year">
+                May 2014 – December 2014
+              </p>
+            </a>
+          </li>
+          <li (click)="showWorkDetails4()">
+            <a title="IT Intern">
+              <h2>IT Intern</h2>
+              <p class="year">
+                January 2013 – July 2013
+              </p> 
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .flex-content-->
+      <figure>
+        <div *ngIf="displayWorkDetails1">
+          <h3>Oracle SOA Developer Details</h3>
+          <p>• Designed, developed and maintained a mobile optimized web application using the latest technologies such as Angular with TypeScript, HTML5, CSS3, Sass, Material Design and JSON RESTful APIs.</p>
+          <p>• Used tools such as Jenkins for automated deployments and Subversion for version control.</p>
+          <p>• Extensively used UNIX based server architecture and became very familiar with UNIX commands.</p>
+          <p>• Responsible for secured file transmissions to and from multiple bank trading partners using FTPS with SSL certificates as well as SFTP and SSH key authentication.</p>
+          <p>• Gathered business requirements from subject matter experts and end users to determine robust, technical solutions to meet those requirements within Oracle E-Business Suite (EBS).</p>
+          <p>• Exercised principles of the software development lifecycle (SDLC) with a large, diverse development team to ensure software applications were delivered within project scope, budget and timeline.</p>
+          <p>• Evaluated Oracle MFT as solution and then implemented from concept to completion.</p>
+          <p>• Developed SOA composite applications using Oracle JDeveloper to integrate external systems into Oracle EBS.</p> 
+        </div>
+        <div *ngIf="displayWorkDetails2">
+          <h3>IT Business Process Analyst Details</h3>
+          <p>• Coordinated directly with internal and external consultants as well as main implementer for maintaining and implementing existing and future modules of Oracle E-Business Suite.</p>
+          <p>• Assisted in transition legacy IBM AS400 system to Oracle EBS.</p>
+          <p>• Developed reports from Oracle using an ad-hoc reporting solution from EiS Technologies.</p>
+        </div>
+        <div *ngIf="displayWorkDetails3">
+          <h3>IT Systems Analyst Details</h3>
+          <p>• Responsible for making a real time copy of various data sources and types and then used Informatica for ETL and then stored data into a data warehouse to improve corporate level reporting.</p>
+          <p>• Administered and maintained a vSphere environment with more than 150 virtual servers.</p>
+          <p>• Implemented and administered a VMware Horizon View environment that contained more than 50 virtual desktops.</p>
+        </div>
+        <div *ngIf="displayWorkDetails4">
+          <h3>IT Intern Details</h3>
+          <p>• Configured PCs, VOIP phones, iPhones and other devices for deployment to various users.</p>
+          <p>• Diagnosed and corrected various computer and network problems.</p>
+          <p>• Responsible for the IT needs of two newly constructed buildings, such as configuring network switches, terminating fiber optic and Ethernet cable, purchasing and configuring PCs, VOIP phones, and printers.</p>
+        </div>
+      </figure>
+    </div>
+    <!-- .end card-50 -->
+  </div>
+  <hr>
+  <div class="wrap">
+    <div class="card-50">
+      <div class="content-left">
+      <!-- <div class="flex-content"> -->
+        <h1>Education</h1>
+        <h4>Missouri University of Science & Technology</h4>
+        <ul class="flexblock">
+          <li>
+            <a title="Information Science & Technology">
+              <div>
+                <h2>B.S. Information Science & Technology</h2>
+                <div>Minor: Enterprise Resource Planning</div>
+                <div>Minor: Business & Management Systems</div>
+                <p class="year">
+                  Augut 2010 – May 2014
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .flex-content-->
+    </div>
+    <!-- .end card-50 -->
+  </div>
+  <!-- .end .wrap -->
+</section>
