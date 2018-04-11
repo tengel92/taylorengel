@@ -6,9 +6,10 @@ import { AppRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
 
-//import PrimeNG modules
+// import PrimeNG modules
 import { AccordionModule } from 'primeng/primeng';
 import { AutoCompleteModule } from 'primeng/primeng';
+import { BlockUIModule } from 'primeng/primeng';
 import { BreadcrumbModule } from 'primeng/primeng';
 import { ButtonModule } from 'primeng/primeng';
 import { CalendarModule } from 'primeng/primeng';
@@ -79,23 +80,22 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
-import { MobileNavbarComponent } from './navbar/mobile-navbar/mobile-navbar.component';
 
-//Blog Components
-//import the three serieses
+// Blog Components
+// import the three serieses
 import { PastPresentFutureComponent } from './blog/past-present-future/past-present-future.component';
 import { TechComponent } from './blog/tech/tech.component';
 import { TheBucketComponent } from './blog/the-bucket/the-bucket.component';
 
-//Topics in the past present future series
+// Topics in the past present future series
 import { CarsComponent } from './blog/past-present-future/cars/cars.component';
 import { PlanesComponent } from './blog/past-present-future/planes/planes.component';
 
-//Topics in the tech series
+// Topics in the tech series
 import { AiComponent } from './blog/tech/ai/ai.component';
 import { DriverlessCarsComponent } from './blog/tech/driverless-cars/driverless-cars.component';
 
-//Topics in the bucket series
+// Topics in the bucket series
 import { TravelComponent } from './blog/the-bucket/travel/travel.component';
 
 @NgModule({
@@ -105,6 +105,7 @@ import { TravelComponent } from './blog/the-bucket/travel/travel.component';
     AppRoutes,
     AccordionModule,
     AutoCompleteModule,
+    BlockUIModule,
     BreadcrumbModule,
     ButtonModule,
     CalendarModule,
@@ -184,8 +185,7 @@ import { TravelComponent } from './blog/the-bucket/travel/travel.component';
     PlanesComponent,
     AiComponent,
     DriverlessCarsComponent,
-    TravelComponent,
-    MobileNavbarComponent
+    TravelComponent
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}

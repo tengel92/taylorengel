@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PastPresentFutureComponent implements OnInit {
 
+  hidden: boolean;
   constructor() { }
 
   ngOnInit() {
-    
+    this.hidden = true;
   }
 
 }

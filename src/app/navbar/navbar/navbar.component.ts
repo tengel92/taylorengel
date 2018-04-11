@@ -13,6 +13,6 @@ export class NavbarComponent implements OnInit {
     items: MenuItem[];
 
     ngOnInit() {
-        
+
     }
 }
