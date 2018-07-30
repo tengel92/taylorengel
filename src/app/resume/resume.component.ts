@@ -11,6 +11,7 @@ export class ResumeComponent implements OnInit {
   displayWorkDetails2 = false;
   displayWorkDetails3 = false;
   displayWorkDetails4 = false;
+  displayWorkDetails5 = false;
 
   constructor() { }
 
@@ -22,23 +23,34 @@ export class ResumeComponent implements OnInit {
    this.displayWorkDetails2 = false;
    this.displayWorkDetails3 = false;
    this.displayWorkDetails4 = false;
+   this.displayWorkDetails5 = false;
   }
   showWorkDetails2() {
    this.displayWorkDetails1 = false;
    this.displayWorkDetails2 = true;
    this.displayWorkDetails3 = false;
    this.displayWorkDetails4 = false;
+   this.displayWorkDetails5 = false;
   }
   showWorkDetails3() {
    this.displayWorkDetails1 = false;
    this.displayWorkDetails2 = false;
    this.displayWorkDetails3 = true;
    this.displayWorkDetails4 = false;
+   this.displayWorkDetails5 = false;
   }
   showWorkDetails4() {
    this.displayWorkDetails1 = false;
    this.displayWorkDetails2 = false;
    this.displayWorkDetails3 = false;
    this.displayWorkDetails4 = true;
+   this.displayWorkDetails5 = false;
   }
+  showWorkDetails5() {
+    this.displayWorkDetails1 = false;
+    this.displayWorkDetails2 = false;
+    this.displayWorkDetails3 = false;
+    this.displayWorkDetails4 = false;
+    this.displayWorkDetails5 = true;
+   }
 }
