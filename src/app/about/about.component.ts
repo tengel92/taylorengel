@@ -18,5 +18,4 @@ export class AboutComponent implements OnInit {
     this.currentDate = moment();
     this.age = this.currentDate.diff(this.birthDate, 'years'); 
   }
-
 }

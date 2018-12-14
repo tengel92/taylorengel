@@ -20,6 +20,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     width: 11.11111%;
+    /* width: 10%; use this if include contact */
 }
 
 .topnav a:hover {
