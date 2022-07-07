@@ -12,20 +12,12 @@ interface NavigationItems {
 const NavItem = (props: { detail: NavigationItems; onClick: () => void }) => {
   const isLogo = props.detail.logo;
 
-  const classes = `w-full text-2xl font-semibold tracking-wider text-center text-white uppercase cursor-pointer bg-indigo-50/10 hover:bg-indigo-900/60 hover:text-indigo-100 `;
-
-  let additionalClasses = `p-3 my-4 lg:my-0 lg:p-5`;
-
-  if (isLogo) {
-    additionalClasses = `flex items-center justify-center p-1`;
-  }
+  const classes = `w-full text-2xl font-semibold tracking-wider text-center text-white uppercase cursor-pointer bg-indigo-50/10 hover:bg-indigo-900/60 hover:text-indigo-100 my-4 lg:my-0 ${
+    isLogo ? `flex items-center justify-center p-1` : `p-5`
+  }`;
 
   return (
-    <li
-      key={props.detail.id}
-      className={`${classes} ${additionalClasses}`}
-      onClick={props.onClick}
-    >
+    <li key={props.detail.id} className={`${classes}`} onClick={props.onClick}>
       {isLogo ? (
         <img src={logo} className="w-16 h-16" alt="Taylor Engel logo" />
       ) : (
@@ -114,7 +106,7 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col items-center justify-end flex-1 list-reset lg:flex-row lg:bg-indigo-50/10 lg:backdrop-blur-2xl">
-          {navigationItems.map((navItem: NavigationItems, index: number) => {
+          {navigationItems.map((navItem: NavigationItems) => {
             return (
               <NavItem
                 detail={navItem}
