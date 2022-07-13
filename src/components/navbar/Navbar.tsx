@@ -12,7 +12,7 @@ interface NavigationItems {
 const NavItem = (props: { detail: NavigationItems; onClick: () => void }) => {
   const isLogo = props.detail.logo;
 
-  const classes = `w-full text-2xl font-semibold tracking-wider text-center text-white uppercase cursor-pointer bg-indigo-50/10 hover:bg-indigo-900/60 hover:text-indigo-100 my-4 lg:my-0 ${
+  const classes = `w-full text-2xl font-semibold tracking-wider text-center text-white uppercase cursor-pointer bg-indigo-50/10 hover:bg-indigo-900/60 hover:text-indigo-100 my-2 lg:my-0 ${
     isLogo ? `flex items-center justify-center p-1` : `p-5`
   }`;
 
@@ -68,7 +68,7 @@ const Navbar = () => {
     <nav
       className={`fixed z-10 flex w-full animate-slide-top-down animate-fade-in flex-wrap items-start justify-end p-6 lg:p-0  ${
         menuIsOpen
-          ? `scroll-lock min-h-screen bg-indigo-50/10 backdrop-blur-2xl transition duration-500 ease-in-out`
+          ? `scroll-lock max-h-screen min-h-screen bg-indigo-50/10 backdrop-blur-2xl transition duration-500 ease-in-out`
           : `transition duration-1000 ease-in-out`
       }`}
     >
