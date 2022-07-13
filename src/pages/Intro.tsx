@@ -14,7 +14,7 @@ const Intro = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center max-w-screen-xl min-h-screen font-semibold text-white animate-tracking-in-expand-fwd-top"
+      className="flex flex-col items-center justify-center max-w-screen-xl min-h-screen mx-auto font-semibold text-white animate-tracking-in-expand-fwd-top"
       id="home"
     >
       <div className="mt-auto">
